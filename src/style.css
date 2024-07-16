@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252525;
+  color: rgba(255, 255, 255, 0.7);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  header {
+    padding: 10px 10px !important;
+  }
+}
+header .h-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .h-logo h3 {
+  letter-spacing: 3px;
+}
+header .h-logo img {
+  width: 60px;
+}
+header .buttons {
+  display: flex;
+  gap: 10px;
+}
+header .buttons a {
+  background-color: gold;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  header .buttons a {
+    padding: 5px 5px !important;
+  }
+}
+header .buttons .active {
+  box-shadow: 2px 2px 10px gold;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.logo img {
+  width: 80px;
+}
+.logo h2 {
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 40px;
+}
+form div {
+  position: relative;
+}
+form div input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid gray;
+  outline: none;
+  color: #fff;
+}
+form div input:focus {
+  box-shadow: 2px 2px 2px rgb(66, 66, 66);
+}
+form div span {
+  position: absolute;
+  color: #ca0000;
+  left: 0;
+  bottom: -30px;
+}
+form button {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #6283af;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+form button:disabled {
+  opacity: 0.5;
+}
+form button:hover {
+  background-color: #3f3f3f;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.cardd {
+  margin: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.cardd:hover {
+  box-shadow: 0 0 20px rgb(144, 144, 144);
+  transform: translate(5px, -5px);
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: #e0e8ef;
+  border-color: rgba(255, 255, 255, 0.33);
+  box-shadow: -4px -2px 16px #fff;
+  color: #394554;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px #fff;
+  border-color: #536f93;
+}
+
+button:active {
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */
